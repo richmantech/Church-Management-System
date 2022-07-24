@@ -8,9 +8,6 @@ if(isset($_POST['checkBoxArray'])){
   
   $bulk_options = $_POST['bulk_options'];
     
-
-
-  // switch($bulk_options){
     
     $sql = "INSERT INTO assign_positions(member_id,position_id)";
 $sql.="VALUES('$positionValueId','$bulk_options')";
@@ -18,14 +15,6 @@ $result = mysqli_query($connections,$sql);
   
   
   
-  // // case 'delete':
-  
-  // // $query = "DELETE  FROM courses WHERE course_id = {$courseValueId} ";
-  
-  // // $update_to_delete_status = mysqli_query($connections,$query);
-  // //confirmQuery($update_to_delete_status);
-      
-  // break;  
       
    redirect("view_positions.php"); 
     
@@ -34,14 +23,6 @@ $result = mysqli_query($connections,$sql);
 }
   
 
-// if(!$message){
-// $sql = "INSERT INTO members(first_name,last_name,tel_no,address,pic)";
-// $sql.="VALUES('$first_name','$surname','$tel','$address','$newfilename')";
-// $result = mysqli_query($connections,$sql);
-
-// $msg="Member Added Successfully";
-
-// }
 
 ?>
 
