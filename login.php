@@ -13,8 +13,7 @@ if(!csrf_token_is_valid() || !csrf_token_is_recent()) {
 $message = "Sorry, request was not valid.";
 }
 else {
-// CSRF tests passed--form was created by us recently.
-// retrieve the values submitted via the form
+
 $admin_email = h($_POST['admin_email']);
 $admin_pass  = h($_POST['admin_pass']);
 if(empty($admin_email)){
