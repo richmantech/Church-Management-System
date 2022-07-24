@@ -46,11 +46,11 @@ try {
     $sr = new SMSRequest();
     // set authentication details.
     $sr->setAuthModel(AuthModel::API_KEY);
-    $sr->setAuthApiKey("528495a0426bd2e5ed1f83cd39c3bde208d3e693c288240aa7ceefac88934b42");
+    $sr->setAuthApiKey("");
     // message properties
     $sr->setMessage($messages);
     $sr->setMessageType(TextMessageType::TEXT);
-    $sr->setSender("CGC");     // should be registered
+    $sr->setSender("");     // should be registered
     // add message destination
     $sr->addDestination($tel_no);
     // send message
