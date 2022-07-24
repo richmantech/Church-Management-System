@@ -169,18 +169,6 @@ echo "<td><center><a href=\"/pics/$pic\"><img class='img-responsive' src='pics/{
 }
   
 
-
-       
-
-
-        //            $query = "SELECT * FROM feedbacks WHERE feedback_course_id = $course_id";
-        //            $send_feedback_query = mysqli_query($connections,$query);
-        //            $row = mysqli_fetch_array($send_feedback_query);
-        //            $feedbacks_id = $row['feedback_id'];
-        //            $count_feedback = mysqli_num_rows($send_feedback_query);
-        // echo "<td><a href=''> {$count_feedback} </a></td>";
-        //             echo "<td>{$course_status}</td>";
-
         echo "<td> <a href='edit_member.php?mid={$id}'>Edit </a></td>";
         //echo "<td> <a onClick=\"javascript:return confirm ('Are you sure you want to delete');\" href='posts.php?delete={$post_id}'>Delete </a></td>";
         echo "<td> <a rel='{$id}' href = 'javascript:void(0)' class='delete_link'>Delete </a></td>";
