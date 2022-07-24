@@ -16,17 +16,7 @@ if(isset($_POST['checkBoxArray'])){
     $sql = "INSERT INTO assign_positions(member_id,position_id)";
 $sql.="VALUES('$positionValueId','$bulk_options')";
 $result = mysqli_query($connections,$sql);
-  
-  
-  
-  // // case 'delete':
-  
-  // // $query = "DELETE  FROM courses WHERE course_id = {$courseValueId} ";
-  
-  // // $update_to_delete_status = mysqli_query($connections,$query);
-  // //confirmQuery($update_to_delete_status);
-      
-  // break;  
+   
       
     
     
